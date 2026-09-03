@@ -41,8 +41,9 @@ class RectangleClass
 		double getHeight() const { return height; }
 		double getArea() const { return width * height; }
 };
-  
+
 int main() {
+	// Esto compila hoy, sin ningun problema - y ese es el problema:
 	RectangleStruct r;
 	r.width = -5.0;
 	r.height = 3.0;
