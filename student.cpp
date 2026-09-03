@@ -24,6 +24,12 @@ class Student
 			gpa = 0.0;
 		}
 
+		Student(string n, int i, double g) {
+			name = n;
+			id = i;
+			setGpa(g);
+		}
+
 		void setName(string n) {
 			if (!n.empty())
 				name = n;
@@ -46,8 +52,6 @@ class Student
 			     << "GPA:  " << gpa << "\n";
 		}
 
-		// TODO (Parte D): Constructor with parameters (name, id, gpa).
-
 		// TODO (Parte E): Destructor.
 		// Print a message indicating that the Student object with that 'name' was destroyed.
 };
@@ -61,8 +65,9 @@ int main() {
 	cout << "\n";
 	s1.setGpa(5.0);
 
-	// TODO (Parte D): Create a second Student using the parameterized
-	// constructor, with dummy data (e.g. "Alice Smith", 1001, 3.7).
+	cout << "\n";
+	Student s2("Alice Smith", 1001, 3.7);
+	s2.printInfo();
 
 	return 0;
 }
