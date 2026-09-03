@@ -1,0 +1,14 @@
+# Compiled executables (Windows)
+*.exe
+
+# Compiled executables (Mac/Linux) - add each name you generate here:
+book
+student
+struct_vs_class
+restaurant_design
+
+# Intermediate object files
+*.o
+
+# Editor configuration
+.vscode/
