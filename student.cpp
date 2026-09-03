@@ -30,6 +30,10 @@ class Student
 			setGpa(g);
 		}
 
+		~Student() {
+			cout << "Student object destroyed: " << name << "\n";
+		}
+
 		void setName(string n) {
 			if (!n.empty())
 				name = n;
@@ -51,9 +55,6 @@ class Student
 			     << "ID:   " << id << "\n"
 			     << "GPA:  " << gpa << "\n";
 		}
-
-		// TODO (Parte E): Destructor.
-		// Print a message indicating that the Student object with that 'name' was destroyed.
 };
 
 int main() {
